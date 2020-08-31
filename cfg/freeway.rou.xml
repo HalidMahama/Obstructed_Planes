@@ -1,0 +1,218 @@
+<routes>
+	<vType id="vtypeauto" accel="2.5" decel="8" sigma="0.5" length="4" minGap="1" maxSpeed="100" color="1,0,0" probability="1" speedFactor="1000">
+		<carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="8" lanesCount="4" ccAccel="2.5"/>
+	</vType>
+	<vType id="vtypeloner" accel="1.5" decel="8" sigma="0.5" length="4" minGap="1" maxSpeed="25" color="1,0,0" probability="1" speedFactor="1000">
+	<carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="5.5" lanesCount="4" ccAccel="1.5"/>
+	</vType>
+    <vType id="vtypeloner1" accel="1.5" decel="8" sigma="0.5" length="4" minGap="0.5" maxSpeed="24" color="1,0,0" probability="1" speedFactor="10">
+    <carFollowing-CC tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5" decel="5.5" lanesCount="4" ccAccel="1.5"/>
+    </vType>
+    <route id = "route_0_0"  edges = "source0 s0 n1 p2 n3 e0 exit0"/>
+    <route id = "route_0_1" edges = "source0 s0 n1 p2 n3 p4 p5 n6 p7 n8 e1 exit1"/>
+    <route id = "route_0_2" edges = "source0 s0 n1 p2 n3 p4 p5 n6 p7 n8 p9 p10 n11 p12 n13 e2 exit2"/>
+
+    <route id = "route_1_0" edges = "source1 s1 n6 p7 n8 e1 exit1"/>
+    <route id = "route_1_1" edges = "source1 s1 n6 p7 n8 p9 p10 n11 p12 n13 e2 exit2"/>
+    <route id = "route_1_2" edges = "source1 s1 n6 p7 n8 p9 p10 n11 p12 n13 p14 p15 n16 p17 n18 e3 exit3"/>
+
+    <route id = "route_2_0" edges = "source2 s2 n11 p12 n13 e2 exit2"/>
+    <route id = "route_2_1" edges = "source2 s2 n11 p12 n13 p14 p15 n16 p17 n18 e3 exit3"/>
+    <route id = "route_2_2" edges = "source2 s2 n11 p12 n13 p14 p15 n16 p17 n18 p19 p0 n1 p2 n3 e0 exit0"/>
+
+    <route id = "route_3_0" edges = "source3 s3 n16 p17 n18 e3 exit3"/>
+    <route id = "route_3_1" edges = "source3 s3 n16 p17 n18 p19 p0 n1 p2 n3 e0 exit0"/>
+    <route id = "route_3_2" edges = "source3 s3 n16 p17 n18 p19 p0 n1 p2 n3 p4 p5 n6 p7 n8 e1 exit1"/>
+
+    <trip id="0" depart="4" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="3" depart="4" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="9" depart="4" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+    <trip id="6" depart="4" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    
+    <trip id="1" depart="5" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="4" depart="5" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="7" depart="5" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="10" depart="5" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="2" depart="6" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="5" depart="6" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="8" depart="6" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="11" depart="6" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="12" depart="331.700" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="15" depart="331.700" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="18" depart="331.700" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="21" depart="331.700" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+    
+    <trip id="13" depart="332.700" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="16" depart="332.700" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="19" depart="332.700" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="22" depart="332.700" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+    
+    <trip id="14" depart="333.700" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="17" depart="333.700" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="20" depart="333.700" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="23" depart="333.700" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="24" depart="659.400" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="27" depart="659.400" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="30" depart="659.400" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="33" depart="659.400" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="25" depart="660.400" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="28" depart="660.400" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="31" depart="660.400" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="34" depart="660.400" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="26" depart="661.400" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="29" depart="661.400" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/> 
+    <trip id="32" depart="661.400" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="35" depart="661.400" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="36" depart="987.200" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="39" depart="987.200" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="42" depart="987.200" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="45" depart="987.200" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="37" depart="988.200" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="40" depart="988.200" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="43" depart="988.200" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="46" depart="988.200" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="38" depart="989.200" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="41" depart="989.200" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="44" depart="989.200" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="47" depart="989.200" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="48" depart="1315.000" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="51" depart="1315.000" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="54" depart="1315.000" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="57" depart="1315.000" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="49" depart="1316.000" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="52" depart="1316.000" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="55" depart="1316.000" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="58" depart="1316.000" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="50" depart="1317.000" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="53" depart="1317.000" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="56" depart="1317.000" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="59" depart="1317.000" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="60" depart="1642.800" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="63" depart="1642.800" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="66" depart="1642.800" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="69" depart="1642.800" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="61" depart="1643.800" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="64" depart="1643.800" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="67" depart="1643.800" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="70" depart="1643.800" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="62" depart="1644.800" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="65" depart="1644.800" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="68" depart="1644.800" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="71" depart="1644.800" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="72" depart="1970.600" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="75" depart="1970.600" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="78" depart="1970.600" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="81" depart="1970.600" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="73" depart="1971.600" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="76" depart="1971.600" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="79" depart="1971.600" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="82" depart="1971.600" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="74" depart="1972.600" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="77" depart="1972.600" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="80" depart="1972.600" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="83" depart="1972.600" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="84" depart="2294.400" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="87" depart="2294.400" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="90" depart="2294.400" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="93" depart="2294.400" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="85" depart="2295.400" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="88" depart="2295.400" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="91" depart="2295.400" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="94" depart="2295.400" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="86" depart="2296.400" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="89" depart="2296.400" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="92" depart="2296.400" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="95" depart="2296.400" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="96" depart="2626.200" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="99" depart="2626.200" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="102" depart="2626.200" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="105" depart="2626.200" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="97" depart="2627.200" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="100" depart="2627.200" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="103" depart="2627.200" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="106" depart="2627.200" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="98" depart="2628.200" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="101" depart="2628.200" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="104" depart="2628.200" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="107" depart="2628.200" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="108" depart="2954.000" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="111" depart="2954.000" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="114" depart="2954.000" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="117" depart="2954.000" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="109" depart="2955.000" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="112" depart="2955.000" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="115" depart="2955.000" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="118" depart="2955.000" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="110" depart="2956.000" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="113" depart="2956.000" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="116" depart="2956.000" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="119" depart="2956.000" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+
+
+    <trip id="120" depart="3281.800" from="non0" to="exit1" type="vtypeloner1" departLane="1" />
+    <trip id="123" depart="3281.800" from="non1" to="exit2" type="vtypeloner1" departLane="1" />
+    <trip id="126" depart="3281.800" from="non2" to="exit3" type="vtypeloner1" departLane="1" />
+    <trip id="129" depart="3281.800" from="non3" to="exit0" type="vtypeloner1" departLane="1" />
+
+    <trip id="121" depart="3282.800" from="non0" to="exit2" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="124" depart="3282.800" from="non1" to="exit3" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="127" depart="3282.800" from="non2" to="exit0" type="vtypeloner" departLane="2" departPos="100"/>
+    <trip id="130" depart="3282.800" from="non3" to="exit1" type="vtypeloner" departLane="2" departPos="100"/>
+
+    <trip id="122" depart="3283.800" from="non0" to="exit3" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="125" depart="3283.800" from="non1" to="exit0" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="128" depart="3283.800" from="non2" to="exit1" type="vtypeloner" departLane="3" departPos="200"/>
+    <trip id="131" depart="3283.800" from="non3" to="exit2" type="vtypeloner" departLane="3" departPos="200"/>
+
+    <!--trip id="0" depart="4" from="non0" to="exit3" type="vtypeloner1" departLane="best" />
+    <trip id="1" depart="5" from="non0" to="exit2" type="vtypeloner" departLane="best" />
+    <trip id="2" depart="6" from="non0" to="exit3" type="vtypeloner" departLane="best" /-->
+</routes>
+
+
+

@@ -1,0 +1,6 @@
+<additionals>
+    <poi id="exit_POI_0" color="red" layer="0.00" x="5450.00" y="-40.00" imgFile="/Users/mac/src/Simulations/Currrent Simulations/mixedTraf_persuade/cfg/flag.png" width="50.00" height="50.00" type="WE"/>
+    <poi id="exit_POI_1" color="red" layer="0.00" x="6960.00" y="-5450.00" imgFile="/Users/mac/src/Simulations/Currrent Simulations/mixedTraf_persuade/cfg/flag.png" width="50.00" height="50.00" type="NS"/>
+    <poi id="exit_POI_2" color="red" layer="0.00" x="1550.00" y="-6960.00" imgFile="/Users/mac/src/Simulations/Currrent Simulations/mixedTraf_persuade/cfg/flag.png" width="50.00" height="50.00" type="EW"/>
+    <poi id="exit_POI_3" color="red" layer="0.00" x="40.00" y="-1550.00" imgFile="/Users/mac/src/Simulations/Currrent Simulations/mixedTraf_persuade/cfg/flag.png" width="50.00" height="50.00" type="SN"/>
+</additionals>
